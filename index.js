@@ -23,7 +23,7 @@ app.get("/api/about", (req, res) => {
   });
 });
 
-const port = 4040;
+const port = process.env.PORT || 4040;
 
 app.listen(port, () => {
   console.log(`server running on port ${port}`);
