@@ -10,6 +10,10 @@ app.use(
 );
 
 app.get("/", (req, res) => {
+  res.send("Api is running.");
+});
+
+app.get("/api/about", (req, res) => {
   res.status(200).json({
     slackUsername: "jessecrack",
     backend: true,
