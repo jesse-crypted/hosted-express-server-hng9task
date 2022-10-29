@@ -9,7 +9,7 @@ app.use(
   })
 );
 
-app.get("/api/v1/about", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json({
     slackUsername: "jessecrack",
     backend: true,
